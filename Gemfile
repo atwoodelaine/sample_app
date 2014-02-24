@@ -33,10 +33,11 @@ group :doc do
 end
 
 group :test, :development do
-  gem "rspec-rails", "~> 2.4"
+  gem "rspec-rails", "~> 2.0.0.beta.18"
+  gem "spork", '0.8.4'
+  gem 'webrat', '0.7.1'
 end
 
-gem 'spork', '~>1.0rc'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
