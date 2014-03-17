@@ -14,7 +14,7 @@ class User < ActiveRecord::Base
 	attr_accessible :password, :password_confirmation
 	before_save {self.email = email.downcase}
 
-	email_regex = /\A[\w.\-]+@[a-z\d\-.]+\.[a-z]+\z/i
+	email_regex = /\A[\w+\-.]+@[a-z\d\-]+(?:\.[a-z\d\-]+)*\.[a-z]+\z/i
 
 	validates :name,  :presence => true,
 					  :length 	=> { :maximum => 50}

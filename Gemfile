@@ -41,6 +41,7 @@ group :test, :development do
   gem 'spork'
   gem 'webrat'
   gem 'annotate'
+  gem 'factory_girl_rails'
 end
 
 gem 'rake'
